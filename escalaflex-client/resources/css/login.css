@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Anton";
+    src: url("../../vendor/fonts/Anton/Anton-Regular.ttf");
+  }
+
+@font-face {
+font-family: "Roboto";
+src: url("../../vendor/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+body{
+    font-family: Roboto;
+}
+
+.title{
+    font-family: 'Anton';
+    font-size: 3.75rem;
+    text-align: center;
+}
+
+.orange-title{
+    color: #e28935;
+}
+
+.login-container{
+    background-color: #333;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 450px;
+    padding: 60px 93px 50px 93px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

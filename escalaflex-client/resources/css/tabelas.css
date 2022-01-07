@@ -1,0 +1,61 @@
+/* Cores Customizadas */
+.btn-orange{
+    background-color: #f09900;
+    border-color: #f09900;
+    color: #fff;
+}
+
+
+.btn-orange:hover{
+    background-color: #dc8c00;
+    border-color: #dc8c00;
+    color: #fff;
+}
+
+.btn-blue{
+    background-color: #00529d;
+    border-color: #00529d;
+    color: #fff
+}
+
+.btn-blue:hover{
+    background-color: #0071d8;
+    border-color: #0071d8;
+    color: #fff
+}
+
+.btn-red{
+    background-color: #FF4236;
+    border-color: #FF4236;
+    color: #fff
+}
+
+.btn-red:hover{
+    background-color: #FF4236;
+    border-color: #FF4236;
+    color: #fff
+}
+
+
+.bg-gray{
+    background-color: #f2f2f2;
+}
+
+.bg-gray:hover{
+    background-color: #e8e8e8;
+}
+
+
+/* Botões com largura fixa */
+.action-button{
+    min-width: 120px;
+}
+
+.filter-button{
+    min-width: 90px;
+}
+
+.tab-escala{
+    min-width: 170px;
+    text-align: center;
+}

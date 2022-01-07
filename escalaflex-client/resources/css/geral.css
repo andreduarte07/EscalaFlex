@@ -1,0 +1,56 @@
+@font-face {
+	font-family: "Roboto";
+	src: url('../../vendor/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face{
+	font-family: "Roboto Medium";
+	src: url("../../vendor/fonts/Roboto/Roboto-Medium.ttf")
+}
+
+@font-face{
+	font-family: Anton;
+	src: url("../../vendor/fonts/Anton/Anton-Regular.ttf");
+}
+
+body{
+	font-family: Roboto;
+}
+
+body {
+	background-color: #ffffff;
+}
+
+.header{
+	font-size: 14px;
+	position: fixed;
+	width: 100%;
+}
+
+main {
+	padding-top: 120px !important;
+}
+
+.header-title{
+	font-family: Anton;
+	margin-bottom: 0;
+	font-size: 2.25em;
+}
+
+.text-orange{
+	color: #e28935 !important;
+}
+
+.bg-bronze{
+	background-color: #daa859;
+	font-size: 10px
+}
+
+.account-management-link{
+	font-size: 12px;
+	font-family: "Roboto Medium";
+}
+
+.dropdown-menu{
+	z-index: 10;
+}

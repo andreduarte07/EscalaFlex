@@ -1,0 +1,731 @@
+{
+	"info": {
+		"_postman_id": "e0894ee1-f10c-4a3f-a040-2c4443634f4f",
+		"name": "escalaflex",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Unidades",
+			"item": [
+				{
+					"name": "Buscar Unidades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/andre/trabalho/unidades",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"unidades"
+							]
+						},
+						"description": "Buscar Unidades"
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Unidade por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/andre/trabalho/unidades/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"unidades",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserir Unidade",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Exemplo\",\n\t\"endereco\": \"exemplo\",\n\t\"telefone\": \"(51)999999999\",\n\t\"cep\": \"944444444\",\n\t\"email\": \"exemplo@exemplo.com\",\n\t\"responsavel\": \"exemplo\",\n\t\"cidade\": \"exemplo\",\n\t\"estado\": \"exemplo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/andre/trabalho/unidades",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"unidades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Unidade",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/andre/trabalho/unidades/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"unidades",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Unidade",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Exemplo\",\n\t\"endereco\": \"exemplo\",\n\t\"telefone\": \"(51)999999999\",\n\t\"cep\": \"944444444\",\n\t\"email\": \"exemplo@exemplo.com\",\n\t\"responsavel\": \"exemplo\",\n\t\"cidade\": \"exemplo\",\n\t\"estado\": \"exemplo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/andre/trabalho/unidades/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"unidades",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvX2lkIjoxLCJ1c3VhcmlvX25vbWUiOiJBbmRyZSJ9.ad6tHPLGYJ2TWXGOEOdOFJxs9WHevPOmhUH8n597gb8",
+						"type": "string"
+					}
+				]
+			},
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Gerar Token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"andre@hotmail.com\",\n\t\"senha\": 1234\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/andre/trabalho/auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/andre/trabalho/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Busca Usuario por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/andre/trabalho/usuarios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"usuarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserir Usuario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Exemplo\",\n\t\"email\": \"exemplo@exemplo.com\",\n\t\"senha\": 12345,\n\t\"status\": 1,\n\t\"matricula\": \"matricula\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/andre/trabalho/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/andre/trabalho/usuarios/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"usuarios",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Andre vinicius duarte lindo\",\r\n    \"email\": \"andre@hotmail.com\",\r\n    \"senha\": \"1234\",\r\n    \"status\": 1,\r\n    \"matricula\": 123456\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/andre/trabalho/usuarios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"usuarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvX2lkIjoxLCJ1c3VhcmlvX25vbWUiOiJBbmRyZSJ9.ad6tHPLGYJ2TWXGOEOdOFJxs9WHevPOmhUH8n597gb8",
+						"type": "string"
+					}
+				]
+			},
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Horarios",
+			"item": [
+				{
+					"name": "Buscar Horarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/andre/trabalho/horarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"horarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Horario por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/andre/trabalho/horarios/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"horarios",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserir Horario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codDia\": 2,\r\n    \"hrAbertura\": \"200000\",\r\n    \"hrFechamento\": \"900000\",\r\n    \"fk_idUnidade\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/andre/trabalho/horarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"horarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Horario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/andre/trabalho/horarios/12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"horarios",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Horario",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 7,\r\n    \"codDia\": 2,\r\n    \"hrAbertura\": \"50:00:00\",\r\n    \"hrFechamento\": \"00:00:00\",\r\n    \"fk_idUnidade\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/andre/trabalho/horarios/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"horarios",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvX2lkIjoxLCJ1c3VhcmlvX25vbWUiOiJBbmRyZSJ9.ad6tHPLGYJ2TWXGOEOdOFJxs9WHevPOmhUH8n597gb8",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "46a86f52-6e68-4ead-9da8-73795ba3a66e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "8d134cbb-e92c-4a2f-ab61-f909fb541d08",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Posicoes",
+			"item": [
+				{
+					"name": "Buscar Posicoes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/andre/trabalho/posicoes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"posicoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Posicao por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/andre/trabalho/posicoes/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"posicoes",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserir Posicao",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"descricao\": \"Muito Ruim\",\r\n    \"fk_idUnidade\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/andre/trabalho/posicoes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"posicoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Posicao",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/andre/trabalho/posicoes/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"posicoes",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Posicao",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"descricao\": \"Muito Muito boa\",\r\n    \"fk_idUnidade\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/andre/trabalho/posicoes/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"andre",
+								"trabalho",
+								"posicoes",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvX2lkIjoxLCJ1c3VhcmlvX25vbWUiOiJBbmRyZSJ9.ad6tHPLGYJ2TWXGOEOdOFJxs9WHevPOmhUH8n597gb8",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "df649815-2247-48a7-9fd9-f152af74ae7b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "beb753ca-3eef-4182-b951-97726ab00ba4",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvX2lkIjoxLCJ1c3VhcmlvX25vbWUiOiJBbmRyZSJ9.ad6tHPLGYJ2TWXGOEOdOFJxs9WHevPOmhUH8n597gb8",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "ca984dac-64c8-40e2-8993-807773751e82",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "4e1671f5-36c6-4b90-8260-783e25b5dcb9",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

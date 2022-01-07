@@ -1,0 +1,19 @@
+form{
+    margin-top: 30px;
+}
+
+fieldset{
+    margin-top: 30px;
+}
+
+fieldset legend{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 768px){
+    .campo-horario{
+        max-width: 30%;
+    }
+}

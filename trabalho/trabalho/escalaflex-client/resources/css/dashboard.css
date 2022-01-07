@@ -1,0 +1,58 @@
+.list-group-item span{
+    font-size: 0.85em;
+}
+
+.quick-detail-badge-purple{
+    width: 30px;
+    height: 30px;
+    background-color: #ebebff;
+    color: #9395ff;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quick-detail-badge-green{
+    width: 30px;
+    height: 30px;
+    background-color: #e3f8eb;
+    color: #81dd99;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quick-detail-badge-gray{
+    width: 30px;
+    height: 30px;
+    background-color: #f2f2f9;
+    color: #c2c1d2;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quick-detail-badge-yellow{
+    width: 30px;
+    height: 30px;
+    background-color: #fdf6e7;
+    color: #f6d286;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quick-detail-badge-red{
+    width: 30px;
+    height: 30px;
+    background-color: #fae6e9;
+    color: #ed828f;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
